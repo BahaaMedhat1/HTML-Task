@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>
+                Contact Us
+            </legend>
+
+            <div class='FirstName-input'>
+                <label for="firstName">First Name</label>
+                <br>
+                <input id='firstName' type="text" minlength="3" required autofocus name="firstName"
+                placeholder="Enter your First Name..." size="30">
+            </div>
+            <br>
+
+            <div class='LastName-input'>
+                <label for="lastName">Last Name</label>
+                <br>
+                <input id='lastName' type="text" minlength="3" required name="lastName" size="30"
+                placeholder="Enter your Last Name...">
+            </div>
+            <br>
+
+            <div class='email-input'>
+                <label for="email">Email</label>
+                <br>
+                <input id='email' type="email" required  name="email" placeholder="Ex@example.com" size="30">
+            </div>
+            <br>
+
+            <div class='phone-input'>
+                <label for="phone">Phone Number</label>
+                <br>
+                <input id='phone' type="tel" required name="phone" placeholder="(000) 0000-000" size="30" minlength="11" maxlength="11">
+            </div>
+            <br>
+            
+            <div class='subject-input'>
+                <label for="subject">Subject</label>
+                <br>
+                <input id='subject' type="text" minlength="5" required  name="subject" placeholder="Write Your Subject" size="30">
+            </div>
+            <br>
+
+            <div class='comments-input'>
+                <label for="comments">Comments</label>
+                <br>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter Your Message" minlength="10" ></textarea>
+            </div>
+            <br>
+
+            <div class="inquiry">
+                <label for="inquiry">Choose Inquiry Type</label>
+                <select id='inquiry' required name="inquiry type">
+                    <option value="state1">state1</option>
+                    <option value="state2" selected>state2</option>
+                    <option value="state3">state3</option>
+                </select>
+            </div>
+            <br>
+
+             <div class='contact-Method'>
+                <label for="contact-email">Prefered Contact Method</label>
+                <br>
+                <input id='contact-email' type="radio" required  name="contact-method" value="Email">
+                <label for="contact-email">Email</label>
+                <input id='contact-call' type="radio" required  name="contact-method" value="Phone Call">
+                <label for="contact-call">Phone Call</label>
+                <input id='contact-SMS' type="radio" required  name="contact-method" value="Send SMS">
+                <label for="contact-SMS">Send SMS</label>
+            </div>
+            <br>
+
+            <div class="newsletter">
+                <input id='news' type="checkbox" checked name="Recive" value="Newsletter" >
+                <label for="news">Newsletter Subscription</label>
+            </div>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
